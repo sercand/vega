@@ -1555,7 +1555,7 @@ vega-expression@2:
 
 vega-expression@sercand/vega-expression:
   version "2.0.0"
-  resolved "https://codeload.github.com/sercand/vega-expression/tar.gz/c1a0cbceb39148657347d6ef9807a4aac05def8a"
+  resolved "https://codeload.github.com/sercand/vega-expression/tar.gz/9f24cedb5708528b936f6acde9f57b18ada5dc90"
   dependencies:
     vega-util "1"
 
@@ -1685,9 +1685,13 @@ window-size@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.2.0.tgz#b4315bb4214a3d7058ebeee892e13fa24d98b075"
 
-wordwrap@0.0.2, wordwrap@~0.0.2:
+wordwrap@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
+
+wordwrap@~0.0.2:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
 
 wordwrap@~1.0.0:
   version "1.0.0"
