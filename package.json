@@ -46,7 +46,7 @@
     "url": "https://github.com/vega/vega.git"
   },
   "scripts": {
-    "prebuild": "rm -rf build && mkdir build && json2module package.json > build/package.js",
+    "prebuild": "rm -rf build && mkdir build && rm -rf node_modules/vega-parser/node_modules &&json2module package.json > build/package.js",
     "build": "bin/rollup && bin/schema > build/vega-schema.json",
     "postbuild": "uglifyjs build/vega.js -c -m -o build/vega.min.js",
     "pretest": "npm run build",
@@ -59,7 +59,7 @@
     "vega-crossfilter": ">=1.0.0-beta",
     "vega-dataflow": ">=2.0.0-beta",
     "vega-encode": ">=1.0.0-beta",
-    "vega-expression": "2",
+    "vega-expression": "sercand/vega-expression",
     "vega-force": ">=1.0.0-beta",
     "vega-geo": ">=1.0.0-beta",
     "vega-hierarchy": ">=1.0.0-beta",
