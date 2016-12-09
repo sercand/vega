@@ -1,6 +1,6 @@
 {
   "name": "vega",
-  "version": "3.0.0-beta.10",
+  "version": "3.0.0-beta.11",
   "description": "The Vega visualization grammar.",
   "keywords": [
     "vega",
@@ -46,7 +46,7 @@
     "url": "https://github.com/vega/vega.git"
   },
   "scripts": {
-    "prebuild": "rm -rf build && mkdir build && rm -rf node_modules/vega-parser/node_modules &&json2module package.json > build/package.js",
+    "prebuild": "rm -rf build && mkdir build && json2module package.json > build/package.js",
     "build": "bin/rollup && bin/schema > build/vega-schema.json",
     "postbuild": "uglifyjs build/vega.js -c -m -o build/vega.min.js",
     "pretest": "npm run build",
